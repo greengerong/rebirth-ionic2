@@ -14,6 +14,13 @@
 // automatically applied to the <body> element in the app.
 @import '../theme/mixin';
 
+html {
+  -o-user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  user-select: text;
+}
+
 a {
   color: #4acaa8;
   cursor: pointer;
@@ -42,3 +49,4 @@ img {
   max-width: 100%;
   height: auto;
 }
+

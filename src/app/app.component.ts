@@ -7,7 +7,7 @@ import { RebirthHttpProvider } from 'rebirth-http';
 import { environment } from '../environments/environment';
 
 @Component({
-  template: `<ion-nav [root]="rootPage"></ion-nav>`
+  template: `<ion-nav swipeBackEnabled="true" [root]="rootPage"></ion-nav>`
 })
 export class MyApp {
   rootPage = TabsPage;

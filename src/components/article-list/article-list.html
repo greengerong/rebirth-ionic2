@@ -4,7 +4,7 @@
       <ion-avatar item-left>
         <img src="./assets/img/wolf2.jpg">
       </ion-avatar>
-      <h2><a href="">{{articleItem.title}}</a></h2>
+      <h2><a (click)="gotoPage(articleItem.url)">{{articleItem.title}}</a></h2>
       <p>{{articleItem.date}}</p>
     </ion-item>
     <img *ngIf="articleItem.image" [src]="articleItem.image ">
@@ -25,40 +25,9 @@
       </ion-col>
       <ion-col center text-right>
         <ion-note>
-          <a href="">阅读原文</a>
+          <a (click)="gotoPage(articleItem.url)">阅读原文</a>
         </ion-note>
       </ion-col>
     </ion-row>
   </ion-card>
-  <!--<ion-list inset>-->
-  <!--<ion-list-header>-->
-  <!--<ion-slides pager>-->
-  <!--<ion-slide>-->
-  <!--<img src="./assets/img/sun-flower.jpg">-->
-  <!--<h2>文章1</h2>-->
-  <!--</ion-slide>-->
-  <!--<ion-slide>-->
-  <!--<img src="./assets/img/sun-flower.jpg">-->
-  <!--<h2>文章2</h2>-->
-  <!--</ion-slide>-->
-  <!--<ion-slide>-->
-  <!--<img src="./assets/img/sun-flower.jpg">-->
-  <!--<h2>文章3</h2>-->
-  <!--</ion-slide>-->
-  <!--</ion-slides>-->
-  <!--</ion-list-header>-->
-  <!--<ion-item *ngFor="let articleItem of article?.result">-->
-  <!--<h2>-->
-  <!--<a href="">{{articleItem.title}}</a>-->
-  <!--</h2>-->
-  <!--<p>-->
-  <!--<span>[{{articleItem.author || '破狼'}}] </span>-->
-  <!--<ion-icon name="brush"></ion-icon>-->
-  <!--<span>{{articleItem.date}}</span>-->
-  <!--</p>-->
-  <!--<ion-thumbnail item-right>-->
-  <!--<img src="./assets/img/sun-flower.jpg">-->
-  <!--</ion-thumbnail>-->
-  <!--</ion-item>-->
-  <!--</ion-list>-->
 </section>
