@@ -7,10 +7,9 @@
       <h2><a href="">{{articleItem.title}}</a></h2>
       <p>{{articleItem.date}}</p>
     </ion-item>
-    <img src="./assets/img/sun-flower.jpg">
+    <img *ngIf="articleItem.image" [src]="articleItem.image ">
     <ion-card-content>
-      <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a
-        DeLorean?! Whoa. This is heavy.</p>
+      <p>{{articleItem.overview}}</p>
     </ion-card-content>
     <ion-row>
       <ion-col center text-left>

@@ -8,4 +8,6 @@ export class Article {
   url: string;
   html: string;
   markdown: string;
+  overview?: string;
+  image?: string;
 }
