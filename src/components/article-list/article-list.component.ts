@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy, Output } from '@angular/core';
 import { ArticleService, SearchResult, Article } from '../../core';
 import { environment } from '../../environments/environment';
-import { NavController } from 'ionic-angular';
 import { EventEmitter } from '@angular/common/src/facade/async';
 
 @Component({
@@ -10,7 +9,7 @@ import { EventEmitter } from '@angular/common/src/facade/async';
 })
 export class ArticleListComponent implements OnInit,OnDestroy {
 
-  private article: SearchResult<Article>;
+  article: SearchResult<Article>;
 
   @Output()
   articleClicked = new EventEmitter();

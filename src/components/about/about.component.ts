@@ -8,7 +8,7 @@ import { Article } from '../../core';
   viewProviders: [AboutService]
 })
 export class AboutComponent implements OnInit {
-  private article: Article;
+  article: Article;
 
   constructor(private aboutService: AboutService) {
 

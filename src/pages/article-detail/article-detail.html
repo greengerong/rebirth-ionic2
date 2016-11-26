@@ -1,0 +1,10 @@
+<ion-header>
+  <ion-navbar swipeBackEnabled>
+    <ion-title>{{article?.title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <article-item *ngIf="article" [articleItem]="article"></article-item>
+</ion-content>
