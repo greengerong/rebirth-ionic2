@@ -1,7 +1,6 @@
 import { NgModule, SkipSelf, Optional } from '@angular/core';
 import { RebirthHttpModule } from 'rebirth-http';
 import { RebirthStorageModule } from 'rebirth-storage';
-import { LoadingModule } from './loading';
 import { ArticleService } from './article-service';
 import { HttpModule } from '@angular/http';
 
@@ -11,7 +10,6 @@ import { HttpModule } from '@angular/http';
     HttpModule,
     RebirthHttpModule,
     RebirthStorageModule,
-    LoadingModule
   ],
   providers: [
     ArticleService
@@ -19,7 +17,6 @@ import { HttpModule } from '@angular/http';
   exports: [
     RebirthHttpModule,
     RebirthStorageModule,
-    LoadingModule
   ]
 })
 export class CoreModule {
