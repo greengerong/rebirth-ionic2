@@ -1,4 +1,9 @@
-<section class="article-list">
+<ion-content class="article-list">
+
+  <!--<ion-infinite-scroll (ionInfinite)="loadMore($event)">-->
+  <!--<ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="努力加载中..."></ion-infinite-scroll-content>-->
+  <!--</ion-infinite-scroll>-->
+
   <ion-card *ngFor="let articleItem of article?.result; let $index = index;">
     <ion-item>
       <ion-avatar item-left>
@@ -30,4 +35,9 @@
       </ion-col>
     </ion-row>
   </ion-card>
-</section>
+
+  <ion-infinite-scroll (ionInfinite)="loadMore($event)" *ngIf="article?.result.length < article?.total">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="努力加载中..."></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+
