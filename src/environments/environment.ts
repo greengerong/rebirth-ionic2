@@ -14,6 +14,6 @@ export const environment: any = {
     "pageSize": 5
   },
   "api": {
-    "host": "https://greengerong.github.io/rebirth/assets/source/"
+    "host": "http://oha90a8aa.bkt.clouddn.com/"
   }
 };
