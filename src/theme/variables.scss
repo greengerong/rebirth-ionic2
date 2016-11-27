@@ -2,7 +2,6 @@
 // http://ionicframework.com/docs/v2/theming/
 @import "ionic.globals";
 
-
 // Shared Variables
 // --------------------------------------------------
 // To customize the look and feel of this app, you can override
@@ -10,9 +9,8 @@
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
 
-$text-color:        #000;
-$background-color:  #fff;
-
+$text-color: #000;
+$background-color: #fff;
 
 // Named Color Variables
 // --------------------------------------------------
@@ -23,34 +21,24 @@ $background-color:  #fff;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #387ef5,
-  secondary:  #4acaa8,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary: #268F7A,
+  secondary: #4acaa8,
+  danger: #f53d3d,
+  light: #f4f4f4,
+  dark: #222
 );
-
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
-
-
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-
-
-
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
-
-
-
 
 // App Theme
 // --------------------------------------------------
@@ -61,7 +49,6 @@ $colors: (
 
 $toolbar-background: #4acaa8;
 @import "ionic.theme.default.ios";
-
 
 // Ionicons
 // --------------------------------------------------
