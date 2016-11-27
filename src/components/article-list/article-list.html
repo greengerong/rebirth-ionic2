@@ -1,10 +1,12 @@
-<ion-content class="article-list">
+<ion-content class="article-list" scroll="false">
 
-  <!--<ion-infinite-scroll (ionInfinite)="loadMore($event)">-->
-  <!--<ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="努力加载中..."></ion-infinite-scroll-content>-->
-  <!--</ion-infinite-scroll>-->
+  <ion-refresher (ionRefresh)="refresh($event)">
+    <ion-refresher-content pullingIcon="arrow-dropdown" pullingText="下拉刷新..." refreshingSpinner="circles"
+                           refreshingText="努力刷新数据中...">
+    </ion-refresher-content>
+  </ion-refresher>
 
-  <ion-card *ngFor="let articleItem of article?.result; let $index = index;">
+  <ion-card class="article-card" *ngFor="let articleItem of article?.result; let $index = index;">
     <ion-item>
       <ion-avatar item-left>
         <img src="./assets/img/wolf2.jpg">
@@ -25,7 +27,7 @@
       </ion-col>
       <ion-col center text-center>
         <ion-note>
-          <a>第{{$index + 1}}篇/{{article?.total}}篇</a>
+          <a>第{{$index + 1}}篇/共{{article?.total}}篇</a>
         </ion-note>
       </ion-col>
       <ion-col center text-right>
@@ -36,7 +38,10 @@
     </ion-row>
   </ion-card>
 
-  <ion-infinite-scroll (ionInfinite)="loadMore($event)" *ngIf="article?.result.length < article?.total">
+  <ion-label text-center center *ngIf="article?.total && article?.result.length >= article?.total">数据已加载完成</ion-label>
+
+  <ion-infinite-scroll (ionInfinite)="loadMore($event)"
+                       *ngIf="article?.total && article?.result.length < article?.total">
     <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="努力加载中..."></ion-infinite-scroll-content>
   </ion-infinite-scroll>
 </ion-content>

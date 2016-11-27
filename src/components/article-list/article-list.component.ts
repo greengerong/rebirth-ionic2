@@ -38,6 +38,20 @@ export class ArticleListComponent implements OnInit,OnDestroy {
     this.pageChange(this.pageIndex, () => infiniteScroll.complete());
   }
 
+  refresh(refresher) {
+    this.pageIndex = 1;
+    (<any>this.articleService.getAllArticles).cacheEvict();
+    this.articleService.getArticles(this.pageIndex, environment.article.pageSize)
+      .subscribe(result => {
+        this.article = result;
+        refresher.complete();
+        this.toastCtrl.create({
+          message: '数据刷新成功',
+          duration: 1000
+        }).present();
+      }, (e) => console.log(e, 'ArticleListComponent error'));
+  }
+
   pageChange(pageIndex, done?: () => void) {
     this.articleService.getArticles(pageIndex, environment.article.pageSize)
       .subscribe(result => {

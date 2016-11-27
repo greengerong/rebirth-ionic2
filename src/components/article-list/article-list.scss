@@ -1,3 +1,7 @@
 .article-list {
-
+  .article-card {
+    &:first-child {
+      margin-top: 2rem;
+    }
+  }
 }

@@ -36,7 +36,7 @@ export class ArticleService extends RebirthHttp {
   }
 
   @Cacheable({ pool: 'articles' })
-  private  getAllArticles(): Observable<SearchResult<Article>> {
+  getAllArticles(): Observable<SearchResult<Article>> {
     return this.innerGetAllArticles()
       .map(res => {
         let result = res.result || [];

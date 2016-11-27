@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets"
+<widget id="com.github.greengerong.rebirth-ionic2" version="0.0.1" xmlns="http://www.w3.org/ns/widgets"
         xmlns:cdv="http://cordova.apache.org/ns/1.0">
-  <name>Rebirth-破狼博客</name>
-  <description>Ionic blog app</description>
-  <author email="hi@ionicframework" href="http://ionicframework.com/">破狼</author>
+  <name>Rebirth</name>
+  <description>-破狼博客-Ioic2 app</description>
+  <author email="grzx2210@163.com" href="http://greengerong.com/">破狼</author>
   <content src="index.html"/>
   <access origin="*"/>
   <allow-intent href="http://*/*"/>
@@ -17,7 +17,6 @@
   <allow-navigation href="data:*"/>
   <platform name="android">
     <allow-intent href="market:*"/>
-    <access origin="*"/>
   </platform>
   <platform name="ios">
     <allow-intent href="itms:*"/>
