@@ -53,10 +53,11 @@ export class ArticleListComponent implements OnInit,OnDestroy {
             message: '数据刷新成功',
             duration: 1000
           }).present();
-
+          refresher.complete();
+          loading.dismiss();
         },
-        (e) => console.log(e, 'ArticleListComponent error'),
-        () => {
+        (e) => {
+          console.log(e, 'ArticleListComponent error');
           refresher.complete();
           loading.dismiss();
         });
@@ -78,10 +79,10 @@ export class ArticleListComponent implements OnInit,OnDestroy {
             message: `第${pageIndex}页数据加载完成`,
             duration: 1000
           }).present();
-
+          done && done();
         },
-        (e) => console.log(e, 'ArticleListComponent error'),
-        ()=> {
+        (e) => {
+          console.log(e, 'ArticleListComponent error');
           done && done();
         });
   }
