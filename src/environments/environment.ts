@@ -14,6 +14,6 @@ export const environment: any = {
     "pageSize": 5
   },
   "api": {
-    "host": "https://jsonp.afeld.me/?url=http://greengerong.com/rebirth/assets/source/"
+    "host": "/assets/source/"
   }
 };
