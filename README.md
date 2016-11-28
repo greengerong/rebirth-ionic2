@@ -1,6 +1,8 @@
 Ionic 2 App Base
 =====================
 
+[![Build Status](https://travis-ci.org/greengerong/rebirth-ionic2.svg?branch=master)](https://travis-ci.org/greengerong/rebirth-ionic2)
+
 This is the base template for Ionic 2 starter apps.
 
 ## Using this project
