@@ -3,7 +3,6 @@ node_js:
   - "6"
 before_install:
   - npm install -g ionic cordova
-  - cordova platform add android
 
 script: npm run ci
 
