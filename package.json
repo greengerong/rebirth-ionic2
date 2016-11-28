@@ -6,7 +6,9 @@
   "scripts": {
     "ionic:build": "ionic-app-scripts build",
     "ionic:serve": "ionic-app-scripts serve",
-    "ci": "npm run ionic:build && ionic build android"
+    "ci": "npm run ionic:build",
+    "android": "ionic build android",
+    "ios": "ionic build ios"
   },
   "dependencies": {
     "@angular/common": "2.1.1",
