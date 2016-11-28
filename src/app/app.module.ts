@@ -8,7 +8,6 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { CoreModule } from '../core';
 import { ComponentsModule } from '../components';
 import { ArticleDetailPage } from '../pages/article-detail/article-detail';
-import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     IonicModule.forRoot(MyApp),
     CoreModule,
     ComponentsModule,
-    ReactiveFormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

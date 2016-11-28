@@ -1,0 +1,39 @@
+<p>Rebirth ionic2 博客项目是一个开源学习项目,希望大家能从这里学到你想要的东西。
+  感谢大家长期以来的支持和鼓励。不管你有什么问题都可以在github项目 rebirth-question的issue中提出。
+  博主在空闲时候将会为大家解答。同时也欢迎其他同学帮助解答。 </p>
+<p>如果你有问题，请移步到github项目<a href="https://github.com/greengerong/rebirth-question/issues" target="_blank">
+  rebirth-question(https://github.com/greengerong/rebirth-question/issues)</a>
+</p>
+<form novalidate [formGroup]="issueForm">
+  <ion-item class="form-group">
+    <ion-label floating>称呼</ion-label>
+    <ion-input type="text" name="username" [formControl]="issueForm.controls['username']"></ion-input>
+  </ion-item>
+  <div class="error-block"
+       *ngIf="issueForm.controls['username'].touched && issueForm.controls['username'].hasError('required')">
+    * 大侠请留下你的名字。
+  </div>
+  <ion-item class="form-group">
+    <ion-label floating>邮件</ion-label>
+    <ion-input type="email" name="email" [formControl]="issueForm.controls['email']"></ion-input>
+  </ion-item>
+  <div class="error-block"
+       *ngIf="issueForm.controls['email'].touched && issueForm.controls['email'].hasError('required')">
+    * 大侠请留下你的联系方式。
+  </div>
+  <div class="error-block"
+       *ngIf="issueForm.controls['email'].touched && issueForm.controls['email'].hasError('email')">
+    * 大侠你的邮件格式不对哦。
+  </div>
+  <ion-item class="form-group">
+    <ion-label floating>问题描述</ion-label>
+    <ion-textarea name="issue" rows="6" [formControl]="issueForm.controls['issue']"></ion-textarea>
+  </ion-item>
+  <div class="error-block"
+       *ngIf="issueForm.controls['issue'].touched && issueForm.controls['issue'].hasError('required')">* 大侠请留下你的反馈意见。
+  </div>
+
+
+  <button (click)="onSubmit(issueForm.value)" ion-button color="secondary" [disabled]="!issueForm.valid" block>提交
+  </button>
+</form>

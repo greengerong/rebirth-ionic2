@@ -4,7 +4,9 @@ import { HttpModule, JsonpModule } from '@angular/http';
 import { AboutComponent } from './about';
 import { ArticleItemComponent } from './article-item';
 import { ArticleListComponent } from './article-list';
+import { ContactUsComponent } from './contact-us';
 import { IonicModule } from 'ionic-angular';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -12,11 +14,13 @@ import { IonicModule } from 'ionic-angular';
     IonicModule,
     HttpModule,
     JsonpModule,
+    ReactiveFormsModule
   ],
   declarations: [
     AboutComponent,
     ArticleItemComponent,
     ArticleListComponent,
+    ContactUsComponent
   ],
   providers: [],
   exports: [
@@ -24,6 +28,7 @@ import { IonicModule } from 'ionic-angular';
     AboutComponent,
     ArticleItemComponent,
     ArticleListComponent,
+    ContactUsComponent
   ]
 })
 export class ComponentsModule {
