@@ -14,6 +14,9 @@
 // automatically applied to the <body> element in the app.
 @import '../theme/mixin';
 
+$error-color: #d9534f;
+$success-color: #5cb85c;
+
 html {
   -o-user-select: text;
   -moz-user-select: text;
@@ -50,3 +53,34 @@ img {
   height: auto;
 }
 
+.error-block {
+  padding: 10px 1rem;
+  color: $error-color;
+}
+
+.form-group:not(:focus) {
+  &.ng-touched {
+    &.ng-invalid {
+      ion-label {
+        color: $error-color;
+      }
+      ion-input {
+        border-bottom: 1px solid $error-color;
+      }
+    }
+  }
+}
+
+.form-group {
+  &.ng-touched {
+    &.ng-valid {
+      ion-label {
+        color: $success-color;
+      }
+      ion-input {
+        border-bottom: 1px solid $success-color;
+      }
+
+    }
+  }
+}
