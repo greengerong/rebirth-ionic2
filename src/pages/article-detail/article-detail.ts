@@ -17,4 +17,10 @@ export class ArticleDetailPage implements OnInit {
     this.articleService.getArticleByUrl(this.navParams.get('id'))
       .subscribe(article => this.article = article);
   }
+
+  swipeLeft($event) {
+    $event.preventDefault();
+    console.log($event, "$event")
+    this.navCtrl.pop();
+  }
 }

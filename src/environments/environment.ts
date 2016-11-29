@@ -9,6 +9,6 @@ export const environment: any = {
     "pageSize": 5
   },
   "api": {
-    "host": "http://greengerong.com/rebirth/assets/source/"
+    "host": "/assets/source/"
   }
 };
