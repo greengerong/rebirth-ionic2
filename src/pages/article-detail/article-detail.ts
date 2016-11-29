@@ -20,7 +20,6 @@ export class ArticleDetailPage implements OnInit {
 
   swipeLeft($event) {
     $event.preventDefault();
-    console.log($event, "$event")
     this.navCtrl.pop();
   }
 }
