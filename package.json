@@ -4,9 +4,14 @@
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
+    "env:prod": "node ./build/env.js --prod",
+    "env:dev": "node ./build/env.js --dev",
+    "preionic:build": "npm run env:prod",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve",
     "ci": "npm run ionic:build",
+    "ionic:serve": "ionic-app-scripts serve",
+    "dev": "npm run env:dev && npm run ionic:serve",
+    "prod": "npm run env:prod && npm run ionic:serve",
     "android": "ionic build android",
     "ios": "ionic build ios"
   },
@@ -25,7 +30,7 @@
     "ionic-native": "2.2.3",
     "ionicons": "3.0.0",
     "rebirth-http": "0.0.7",
-    "rebirth-storage": "0.0.6-beta-1",
+    "rebirth-storage": "0.0.7",
     "rxjs": "5.0.0-beta.12",
     "zone.js": "0.6.26"
   },
