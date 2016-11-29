@@ -42,8 +42,10 @@ export class ArticleListComponent implements OnInit,OnDestroy {
   refresh(refresher) {
     this.pageIndex = 1;
     let loading = this.loadingCtrl.create({
-      content: '数据刷新中...'
+      content: '数据刷新中...',
+      showBackdrop: false
     });
+
     loading.present();
     (<any>this.articleService.getAllArticles).cacheEvict();
     this.articleService.getArticles(this.pageIndex, environment.article.pageSize)
