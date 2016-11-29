@@ -3,20 +3,42 @@ Ionic 2 App Base
 
 [![Build Status](https://travis-ci.org/greengerong/rebirth-ionic2.svg?branch=master)](https://travis-ci.org/greengerong/rebirth-ionic2)
 
-This is the base template for Ionic 2 starter apps.
+This is a Rebirth blog for Ionic 2.
 
-## Using this project
+## Links
 
-You'll need the Ionic CLI with support for v2 apps:
+* [Web version rebirth: https://github.com/greengerong/rebirth](https://github.com/greengerong/rebirth)
+* [Ionic2 version rebirth: https://github.com/greengerong/rebirth-ionic2](https://github.com/greengerong/rebirth-ionic2)
 
-```bash
-$ npm install -g ionic
-```
+
+## Build this project
+
+You can follow Ionic guide to setup your Ionic environment.
+
+[Installing Ionic: http://ionicframework.com/docs/v2/getting-started/installation/](http://ionicframework.com/docs/v2/getting-started/installation/)
 
 Then run:
 
 ```bash
-$ ionic start myApp
+$ npm run dev
 ```
 
-More info on this can be found on the Ionic [Getting Started](http://ionicframework.com/docs/v2/getting-started/) page.
+or 
+
+```bash
+$ npm run dev
+```
+
+Build project:
+
+```bash
+$ npm run android
+```
+
+```bash
+$ npm run ios
+```
+
+## screen shoot
+
+
