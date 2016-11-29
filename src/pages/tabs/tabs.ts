@@ -8,7 +8,7 @@ import { ContactPage } from '../contact/contact';
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
-  private tabPages = [HomePage, AboutPage, ContactPage];
+  tabPages = [HomePage, AboutPage, ContactPage];
 
   constructor() {
 
