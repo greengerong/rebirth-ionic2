@@ -44,4 +44,6 @@ $ npm run ios
 
 ![home](https://github.com/greengerong/rebirth-ionic2/blob/master/screenshoots/home.png?raw=true)
 
+![home](https://github.com/greengerong/rebirth-ionic2/blob/master/screenshoots/about-me.png?raw=true)
+
 ![concat-us](https://github.com/greengerong/rebirth-ionic2/blob/master/screenshoots/concat-us.png?raw=true)
