@@ -42,3 +42,6 @@ $ npm run ios
 ## screen shoot
 
 
+![home](/greengerong/rebirth/raw/master/screenshoots/home.png)
+
+![concat-us](/greengerong/rebirth/raw/master/screenshoots/concat-us.png)
