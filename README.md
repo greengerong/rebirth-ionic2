@@ -41,9 +41,12 @@ $ npm run ios
 
 ## screen shoot
 
-
+#### home page
 ![home](https://github.com/greengerong/rebirth-ionic2/blob/master/screenshoots/home.png?raw=true)
+
+### about me page
 
 ![home](https://github.com/greengerong/rebirth-ionic2/blob/master/screenshoots/about-me.png?raw=true)
 
+### contact us page
 ![concat-us](https://github.com/greengerong/rebirth-ionic2/blob/master/screenshoots/contact-us.png?raw=true)
