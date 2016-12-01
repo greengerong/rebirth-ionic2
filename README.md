@@ -42,6 +42,6 @@ $ npm run ios
 ## screen shoot
 
 
-![home](/greengerong/rebirth/raw/master/screenshoots/home.png)
+![home](https://github.com/greengerong/rebirth-ionic2/blob/master/screenshoots/home.png?raw=true)
 
-![concat-us](/greengerong/rebirth/raw/master/screenshoots/concat-us.png)
+![concat-us](https://github.com/greengerong/rebirth-ionic2/blob/master/screenshoots/concat-us.png?raw=true)
