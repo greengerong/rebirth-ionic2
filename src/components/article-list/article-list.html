@@ -11,7 +11,7 @@
       <ion-avatar item-left>
         <img src="./assets/img/wolf2.jpg">
       </ion-avatar>
-      <h2><a (click)="gotoPage(articleItem.url)">{{articleItem.title}}</a></h2>
+      <h2 class="article-card-title"><a (click)="gotoPage(articleItem.url)">{{articleItem.title}}</a></h2>
       <p>{{articleItem.date}}</p>
     </ion-item>
     <img *ngIf="articleItem.image" [src]="articleItem.image ">
