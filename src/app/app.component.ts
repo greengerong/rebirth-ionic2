@@ -1,18 +1,19 @@
 import { Component } from '@angular/core';
 import { Platform } from 'ionic-angular';
-import { StatusBar, Splashscreen } from 'ionic-native';
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { RebirthHttpProvider } from 'rebirth-http';
 import { environment } from '../environments/environment';
 
 @Component({
-  template: `<ion-nav swipeBackEnabled="true" [root]="rootPage"></ion-nav>`
+  templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage = TabsPage;
+  rootPage: any = TabsPage;
 
-  constructor(platform: Platform, rebirthHttpProvider: RebirthHttpProvider) {
+  constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, rebirthHttpProvider: RebirthHttpProvider) {
     rebirthHttpProvider
       .baseUrl(environment.api.host)
       .json()
@@ -35,8 +36,8 @@ export class MyApp {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
-      StatusBar.styleDefault();
-      Splashscreen.hide();
+      statusBar.styleDefault();
+      splashScreen.hide();
     });
   }
 }

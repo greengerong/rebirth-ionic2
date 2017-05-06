@@ -8,6 +8,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { CoreModule } from '../core';
 import { ComponentsModule } from '../components';
 import { ArticleDetailPage } from '../pages/article-detail/article-detail';
+import { SplashScreen } from '@ionic-native/splash-screen';
+import { StatusBar } from '@ionic-native/status-bar';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,7 @@ import { ArticleDetailPage } from '../pages/article-detail/article-detail';
     ArticleDetailPage,
   ],
   imports: [
+    BrowserModule,
     IonicModule.forRoot(MyApp),
     CoreModule,
     ComponentsModule,
@@ -32,7 +36,11 @@ import { ArticleDetailPage } from '../pages/article-detail/article-detail';
     TabsPage,
     ArticleDetailPage
   ],
-  providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }]
+  providers: [
+    StatusBar,
+    SplashScreen,
+    { provide: ErrorHandler, useClass: IonicErrorHandler }
+  ]
 })
 export class AppModule {
 }

@@ -1,7 +1,6 @@
-import { Component, OnInit, OnDestroy, Output } from '@angular/core';
+import { Component, OnInit, OnDestroy, Output, EventEmitter } from '@angular/core';
 import { ArticleService, SearchResult, Article } from '../../core';
 import { environment } from '../../environments/environment';
-import { EventEmitter } from '@angular/common/src/facade/async';
 import { ToastController, LoadingController } from 'ionic-angular';
 
 @Component({
